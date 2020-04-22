@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片轮播</title>
+    <style>
+
+    </style>
+    <script>
+        var cnt = 0, t;
+        function srcChange(mode) {
+            var obj = document.getElementById("demo1");
+            obj.src = mode == 0 ? "images/dl1d.jpg" : "images/dl1.jpg";
+            // console.log(obj);
+        }
+
+        function car() {
+            var obj = document.getElementById("carousel");
+            obj.src = "images/love" + ((++cnt % 5) + 1) + ".jpg";
+        }
+
+        function start() {
+            t = setInterval("car()", 1000);
+        }
+
+        function stop() {
+            clearInterval(t);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="top">
+        <img src="images/dl1.jpg" alt="" onmouseover="srcChange(0)" onmouseout="srcChange(1)" id="demo1">
+    </div>
+    <div class="bottom">
+        <div class="img">
+            <img src="images/love1.jpg" alt="" id="carousel">
+        </div>
+        <div class="btn">
+            <input type="button" value="开始" onclick="start()">
+            <input type="button" value="结束" onclick="stop()">
+        </div>
+    </div>
+</body>
+
+</html>
