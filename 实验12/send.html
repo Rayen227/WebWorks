@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function send() {
+            var URL;
+            var sid = document.getElementById("sid").value;
+            var name = document.getElementById("userName").value;
+            var sex;
+            var tmp = document.getElementsByName("sex");
+            console.log(sid, name)
+            for (var i = 0; i < tmp.length; i++) {
+                if (tmp[i].checked) {
+                    sex = tmp[i].value;
+                    break;
+                }
+            }
+            URL = "get.html?sid=" + sid + "&name=" + name + "&sex=" + sex;
+            window.location.href = URL
+        }
+    </script>
+</head>
+
+<body>
+    <form action="get.html" method="get">
+        <table align="center" border="1" rules="all">
+            <tr>
+                <td>学号: </td>
+                <td>
+                    <input type="text" name="sid" placeholder="输入学号">
+                </td>
+            </tr>
+            <tr>
+                <td>姓名: </td>
+                <td>
+                    <input type="text" name="userName" placeholder="输入姓名">
+                </td>
+            </tr>
+            <tr>
+                <td>性别</td>
+                <td>
+                    男<input type="radio" name="sex" checked="checked" value="男"> 女<input type="radio" name="sex"
+                        value="女">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit">
+                    <input type="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <table align="center" border="1" rules="all">
+        <tr>
+            <td>学号: </td>
+            <td>
+                <input type="text" id="sid" placeholder="输入学号">
+            </td>
+        </tr>
+        <tr>
+            <td>姓名: </td>
+            <td>
+                <input type="text" id="userName" placeholder="输入姓名">
+            </td>
+        </tr>
+        <tr>
+            <td>性别</td>
+            <td>
+                男<input type="radio" id="sex" checked="checked"> 女<input type="radio" name="sex">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="button" onclick="send()" value="提交">
+                <input type="reset">
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
