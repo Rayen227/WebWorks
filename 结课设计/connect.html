@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>反馈</title>
+    <style>
+        body {
+            background-color: #F5F5F5;
+        }
+
+        div {
+            margin-top: 100px;
+            margin-left: 400px;
+        }
+
+        textarea {
+            margin-top: 50px;
+            margin-left: 400px;
+        }
+
+        input {
+            display: block;
+            margin-top: 50px;
+            margin-left: 700px;
+        }
+
+        #jiantou {
+            float: left;
+            width: 70px;
+            height: 50px;
+            margin-left: 100px;
+            margin-top: 50px;
+            transition-property: all;
+            transition-duration: 0.3s;
+            position: absolute;
+            cursor: pointer;
+        }
+
+        #jiantou:hover {
+            width: 80px;
+            height: 60px;
+            margin-top: 45px;
+            margin-left: 95px;
+        }
+    </style>
+    <script>
+        function loc() {
+            window.location.href = "index.html";
+        }
+        function sendEmail() {
+            if (!localStorage.getItem("resume")) {
+                alert("请先完善个人信息，并且填写正确的邮箱地址");
+                return;
+            }
+            alert("模块存在安全性问题，暂不开放。造成不便非常抱歉！");
+            // var date = new Date;
+            // var now = date.getTime();
+            // var userData = localStorage.getItem("resume");
+            // if (localStorage.getItem("timeStamp") && now - localStorage.getItem("timeStamp") < 7 * 24 * 3600) {
+            //     alert("发送过于频繁！");
+            //     return;
+            // }
+            // var password = prompt("请输入您个人邮箱的登录密码");
+            // console.log(password);
+            // localStorage.setItem("timeStamp", now);
+            // var jMail = new ActiveXObject("Jmail.message");
+            // jMail.Silent = true;
+            // jMail.Charset = "gb2312";
+            // jMail.FromName = "sender"    //发件人
+            // jMail.From = "sender@163.com";   //发送人的邮件地址
+            // jMail.AddRecipient("accepter@163.com");  //收件人的邮件地址
+            // jMail.Subject = subject;
+            // jMail.Body = infor;
+            // jMail.MailServerUserName = "发件人邮箱登陆名";
+            // jMail.MailServerPassWord = "发件人邮箱登陆密码";
+            // var ret = jMail.Send("smtp.163.com");
+            // if (ret == false) {
+            //     alert("fail");
+            // }
+            // else {
+            //     alert("success");
+            // }
+            // jMail.Close();
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <image src="img/jiantou.jpg" id="jiantou" onclick="loc()"></image>
+    <div>
+        <p>文本框中的内容将以邮件的方式发送至我们的邮箱，一周限一次，请慎重哦~</p>
+    </div>
+    <textarea name="" id="" cols="80" rows="20"></textarea>
+    <input type="button" value="发送反馈" onclick="sendEmail()">
+</body>
+
+</html>

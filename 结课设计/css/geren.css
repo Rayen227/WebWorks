@@ -1,0 +1,29 @@
+table{
+    border: 1px solid #000;
+    width: 500px;
+    height: 700px;
+    font-size: 18px;
+    background: url(../img/paper2.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-left: 450px;
+}
+
+.inp{
+    width: 300px;
+    height: 30px;
+}
+
+#save{
+    border: 1px solid #000;
+    width: 60px;
+    text-align: center;
+    margin-left: 150px;
+    border-radius: 10px;
+    background-color: rgb(153, 201, 240);
+    cursor: pointer;
+}
+#save:hover{
+    background-color: rgb(122, 160, 190);
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简历投递</title>
+    <link rel="stylesheet" href="css/send.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/json2.js"></script>
+    <script src="js/send.js"></script>
+</head>
+
+<body>
+    <div class="left">
+        <div class="title">公司信息</div>
+        <table align="center" cellspacing="25px">
+            <tr>
+                <td align="right">公司名称：</td>
+                <td id="name"></td>
+            </tr>
+            <tr>
+                <td align="right">期望职位：</td>
+                <td id="position"></td>
+            </tr>
+            <tr>
+                <td align="right">期望工作地：</td>
+                <td id="area"></td>
+            </tr>
+        </table>
+        <div class="intro">
+            <p>公司简介：</p>
+            <p id="txt"></p>
+        </div>
+    </div>
+    <div class="right">
+        <div class="title">简历预览</div>
+        <table align="center" cellspacing="25px">
+            <tr>
+                <td align="right">姓名：</td>
+                <td id="userName"></td>
+            </tr>
+            <tr>
+                <td align="right">性别：</td>
+                <td id="sex"></td>
+            </tr>
+            <tr>
+                <td align="right">年龄：</td>
+                <td id="age"></td>
+            </tr>
+            <tr>
+                <td align="right">电子邮箱：</td>
+                <td id="mail"></td>
+            </tr>
+            <tr>
+                <td align="right">期望职位：</td>
+                <td id="myPosition"></td>
+            </tr>
+            <tr>
+                <td align="right">工作地区：</td>
+                <td id="myArea"></td>
+            </tr>
+            <tr>
+                <td align="right">履历简介：</td>
+                <td id="myIntro">
+                    <div></div>
+                </td>
+            </tr>
+        </table>
+        <div id="send">确认投递</div>
+    </div>
+</body>
+
+</html>

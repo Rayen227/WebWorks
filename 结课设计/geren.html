@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简历信息</title>
+    <link rel="stylesheet" href="./css/geren.css">
+    <link rel="stylesheet" href="./css/utils.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/json2.js"></script>
+    <script src="./js/geren.js"></script>
+    <script src="./js/utils.js"></script>
+</head>
+
+<body>
+    <div class="menu">
+        <ul>
+            <li id="qiye"><text>企业</text></li>
+            <li id="zhiwei"><text>职位</text></li>
+            <li id="diqu"><text>地区</text></li>
+            <li id="geren" style="color: rgb(152, 209, 175);"><text>个人简历</text></li>
+        </ul>
+    </div>
+    <table cellspacing="25px">
+        <tr>
+            <td align="right">姓名：</td>
+            <td><input id="name" class="inp" type="text" placeholder="请输入真实姓名"></td>
+        </tr>
+        <tr>
+            <td align="right">性别：</td>
+            <td>男<input type="radio" name="sex" value="男" checked>&nbsp;女<input type="radio" name="sex" value="女"></td>
+        </tr>
+        <tr>
+            <td align="right">年龄：</td>
+            <td><input id="age" class="inp" type="number" min="18" max="55" name="" id="" placeholder="请填写真实年龄(18~55)">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">电子邮箱：</td>
+            <td><input id="email" class="inp" type="email" name="" id="" placeholder="请填写有效的电子邮箱"></td>
+        </tr>
+        <tr>
+            <td align="right">履历简介：</td>
+            <td><textarea id="myIntro" name="" id="" cols="40" rows="15" placeholder="简要介绍以往工作经历"></textarea></td>
+        </tr>
+        <tr>
+            <td align="right"></td>
+            <td>
+                <div id="save">保存</div>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

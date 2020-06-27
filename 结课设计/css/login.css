@@ -1,0 +1,63 @@
+*{
+    font-family: "微软雅黑";
+    font-size: 18px;
+}
+
+table{
+    margin-top: 150px;
+}
+
+tr{
+    height: 50px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.log{
+    border-radius: 10px;
+    background-color: rgb(73, 96, 231);
+}
+
+.userName{
+    background-image: url(../img/user.JPG);
+    background-repeat: no-repeat;
+    background-position-x: 4px;
+    background-position-y: 4px;
+    height: 28px;
+    padding-left: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.userName:hover{
+    border: 1px solid #8a2be2;
+}
+
+.password{
+    background-image: url(../img/password.JPG);
+    background-repeat: no-repeat;
+    background-position-x: 4px;
+    background-position-y: 4px;
+    height: 28px;
+    padding-left: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.password:hover{
+    border: 1px solid #8a2be2;
+}
+
+.confirm{
+    background-image: url(../img/password.JPG);
+    background-repeat: no-repeat;
+    background-position-x: 4px;
+    background-position-y: 4px;
+    height: 28px;
+    padding-left: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.confirm:hover{
+    border: 1px solid #8a2be2;
+}
